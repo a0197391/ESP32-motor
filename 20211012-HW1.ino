@@ -14,10 +14,5 @@ void loop() {
   int input=analogRead(13);
   Serial.println(input);
   int input_map=map(input,0,4095,0,180);
-  //for(pos=0;pos<360;pos++){
-   myservo.write(input_map);
-   // Serial.println(pos);
-  //  delay(50);
-   // }
-
+  myservo.write(input_map);
 }
